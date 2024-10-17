@@ -1,0 +1,36 @@
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+
+
+  *{
+    font-family: "Montserrat", serif;
+    background-color: #FEFAE0;
+  }
+
+  .openingContent{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .openingContent h1{
+    font-size: 4rem;
+  }
+
+  .openingContent button{
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .mainContent{
+    display: none;
+  }
+
+  

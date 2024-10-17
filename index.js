@@ -57,8 +57,25 @@ submitBtn.addEventListener('click', ()=>{
     let val = countries.indexOf(answer)
     countries.splice(val, 1)
     const li = document.createElement("li");
-    li.appendChild(document.createTextNode(answer));
+    li.appendChild(document.createTextNode(answer + " ✅"));
     answers.appendChild(li);
+
+    countryInput.value = ""
   }
 })
 
+const howToPlayBtn = document.getElementById("howToPlayBtn")
+
+const closeModal = document.getElementById("close")
+
+const modal_container = document.getElementById("modal_container");
+
+howToPlayBtn.addEventListener('click', ()=>{
+  modal_container.classList.add('show')
+
+})
+
+closeModal.addEventListener('click', ()=>{
+  modal_container.classList.remove('show')
+
+})

@@ -44,3 +44,21 @@ beginBtn.addEventListener('click', ()=>{
     openingContent.style.display = 'none';
     mainContent.style.display = "block"
 })
+
+const countryInput = document.querySelector('#country')
+const submitBtn = document.querySelector('#submitBtn')
+
+const answers = document.querySelector("#answers")
+
+submitBtn.addEventListener('click', ()=>{
+  let answer = countryInput.value;
+
+  if (countries.includes(answer)){
+    let val = countries.indexOf(answer)
+    countries.splice(val, 1)
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(answer));
+    answers.appendChild(li);
+  }
+})
+
